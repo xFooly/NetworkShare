@@ -1,0 +1,20 @@
+{
+  "name": "Network share",
+  "description": "Server in a browser",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" },
+
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+
+
+  "sockets": { "tcpServer": { "listen": "127.0.0.1:80" } },
+
+  "permissions": [],
+
+  "minimum_chrome_version": "40"
+}
