@@ -1,20 +1,63 @@
 {
+  "version": "0.0.2",
+
   "name": "Network share",
   "description": "Server in a browser",
-  "version": "0.0.2",
   "manifest_version": 2,
-  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" },
 
   "app": {
     "background": {
-      "scripts": ["js/background.js"]
+      "scripts": ["js/main_frame.js"]
     }
   },
 
+  // "default_locale": "en",
+  "icons": { 
+      "16": "calculator-16.png", 
+      // 48
+      "128": "calculator-128.png" 
+  },
 
-  "sockets": { "tcpServer": { "listen": "127.0.0.1:80" } },
+  "author": "Andrea Gallidabino",
+  "offline_enabled": true,
+
+  // bluetooth
+  // commands
+  // copresence
+  // current_locale
+  // externally_connectable
+  // file_handlers
+  // imports
+  // key
+  // kiosk_enable
+  // nacl_modules
+  // oauth2
+  // platforms
+  // requirements
+  // sandbox
+  // short_name
+  // signature
+  // storage
+  // system_ndicator
+  // update_url
+  // url_handlers
+  // version_name
+  // webview
+
+  "sockets": { 
+      "tcpServer": { "listen": ":8080" }
+      
+      // "tcp": {
+      //     "connect": "*"
+      // },
+      
+      // "udp": {
+      //   "send": "*"
+      // }
+  },
 
   "permissions": [],
+  // optional_permissions
 
   "minimum_chrome_version": "40"
 }
